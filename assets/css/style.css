@@ -1,0 +1,116 @@
+:root {
+   --primary-color: #9f3647;
+   --bg-color: #181419;
+   --secondary-color: #ffc098;
+   --third-color: #db4648;
+   --third-bis-color: #db4648f2;
+   --bg-input-color: #4f31572c;
+   --white-color: #fdf5ef;
+   /* fuentes */
+   --primary-font: 'Nunito', sans-serif;
+}
+
+/* (Asterizco)selector all */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+header{
+   background-color: var(--primary-color);
+   padding: 2vh 0;
+   position:sticky;/* para dejar mi nav quieto*/
+   top: 0;/* nav quieto arriba*/
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;/*Añade un espacio entre los elementos del nav*/
+   align-items: center; /* Alinear los items del nav horizontal*/
+}
+nav ul{
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+   /* display: flex;
+   justify-content: space-between; */
+}
+nav ul li{
+   display: inline-block;/*transforma las listas en bloque*/
+}
+
+nav ul li:first-child{
+   margin-left: 0;
+}
+
+nav ul li:last-child{
+   margin-right: 2vw;
+   background-color:var(--bg-color);
+   border-radius: 5px;
+}
+
+nav ul li a, nav>a{
+   display: block;/*convierte los elementos de linea a bloque*/
+   padding: 10px 20px;
+   border-radius: 5px;
+   color: var(--white-color);
+   transition: background-color 0.3s, box-shadow 0.3s;/* Transición del color de fondo */
+}
+
+nav ul li a:hover{
+   background-color: var(--primary-color);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);;
+}
+
+/*etiquetas*/
+a {
+   text-decoration: none;
+   color: var(--white-color);
+}
+
+h2 {
+   color: var(--white-color);
+   font-size: 2rem;
+}
+
+#logo {
+   font-weight: bold;
+}
+
+.search-title {
+   font-size: 3.5rem;
+}
+
+.movie-item-img {
+   width: 200px;
+   height: 300px;
+   object-fit: cover;
+}
+
+body {
+   background-color: var(--bg-color);
+   font-family: var(--primary-font);
+}
+
+#banner {
+   background-image: url(../img/1.jpg);
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   /*alto*/
+   box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+.movie-item-img-v2 {
+   width: 100px;
+   height: 200px;
+}
+
+.movie-item-detail-title{
+   color: #fdf5ef;
+}
+
+.movie-item-detail-v2{
+   color: #fdf5ef;
+}
