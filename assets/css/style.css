@@ -28,6 +28,7 @@ nav{
    justify-content: space-between;/*Añade un espacio entre los elementos del nav*/
    align-items: center; /* Alinear los items del nav horizontal*/
 }
+
 nav ul{
    list-style-type: none;
    padding: 0;
@@ -100,6 +101,23 @@ body {
    height: 100vh;
    /*alto*/
    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.titulo_Principal {
+   font-size: 4rem;
+   font-weight: 700;
+   margin-bottom: 1rem;
+}
+
+.subtitulo_Principal{
+   font-size: 2.2rem;
+   font-weight: 400;
+   margin-bottom: 1rem;
 }
 
 .movie-item-img-v2 {
