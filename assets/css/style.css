@@ -120,6 +120,22 @@ body {
    margin-bottom: 1rem;
 }
 
+.btn{
+   padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    outline: none; /* Esto elimina cualquier borde de enfoque predeterminado */
+    transition:  background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover{
+   background-color: var(--primary-color);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+}
+
 .movie-item-img-v2 {
    width: 100px;
    height: 200px;
