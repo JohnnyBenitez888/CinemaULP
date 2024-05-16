@@ -157,9 +157,21 @@ footer{
    align-items: center;
    justify-content: center;
 }
+
 .listaFooter{
    font-size: 19px;
 }
+
+.search-title{
+   color: white;
+   font-size: 3vw;
+}
+
+.container{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
 
 .movie-item-img-v2 {
    width: 100px;
