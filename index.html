@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Cinema ULP</title>
     <!-- google-fonts -->
@@ -20,289 +19,229 @@
 <body>
 
     <header class="header">
-
-        <nav>
-            <div id="logo">
-                <a href="#">
-                    <i class="fas fa-film"></i>
-                    <span class="logo-text">Cinema ULP</span>
-                </a>
-            </div>
-
-            <!-- menú -->
-            <ul class="nav-links">
-                <li><a href="#popular">Tendencias</a></li>
-                <li><a href="pages/register.html" class="btn-ulp">Registrarse</a></li>
-                <li>
-                    <a href="pages/iniciosesion.html">
-                        <i class="fas fa-sign-in-alt"></i>
-                        <span class="login-text">Iniciar Sesión</span>
-                    </a>
-                </li>
+        <nav class="navegacion">
+            <a class="anclaLogo" href="#">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>Cinema ULP</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="#tendencias">Tendencias</a></li>
+                <li class="listaItem"><a class="linkNav" href="pages/registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./pages/iniciosesion.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
-
     </header>
-
-    <main>
-
-        <section id="banner" class="d-flex">
-            
-            <div class="card-banner container">
-                <!-- Titulo principal -->
-            <h1 class="titulo_Principal">El Séptimo Arte en Foco: <br> Descubre los Tesoros Cinematográficos del Mundo</h1>
-            <h2 class="subtitulo_Principal">Un Viaje a Través de los Momentos Inolvidables <br> de la Pantalla Grande.</h2>
-                <a href="pages/register.html" class="btn">Registrate</a>
-            </div>
+    <main id="main" class="main">
+        <section class="sectionPrincipal">
+            <h1 class="tituloPrincipal">El Séptimo Arte en Foco: <br> Descubre los Tesoros Cinematográficos del Mundo</h1>
+            <h2 class="subtituloPrincipal">Un Viaje a Través de los Momentos Inolvidables <br> de la Pantalla Grande.</h2>
+            <a class="botonRegistrarse" href="./pages/registrarse.html">Registrate</a>
+        </section>
+        <section class="buscadorPrincipal">
+            <h2 class="tituloSection">¿Qué quieres ver?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="botonBuscador" type="submit" value="Buscar">
+            </form>
+           
 
         </section>
-
-        <section id="search" class="container">
-            <h2 class="search-title">¿Qué quieres ver?</h2>
-            <input type="text" class="input-search" placeholder="Buscar...">
-        </section>
-
-        <section id="popular">
-
-        
-            <div class="container" class="movies-grid">
-
-                <h2>Las tendencias de hoy</h2>
-                <!-- Div de las películas -->
-                <div id="lista-popular">
-
-                    <!-- pelicula 00 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_0.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Marvels</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 01 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_1.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Pobre Criatura</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 02 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_2.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 03 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_3.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Acuaman 2</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 04 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_4.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Wonka</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 05 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_5.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Con todos menos contigo</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 06 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_6.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Beekeeper</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 07 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_7.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Attack</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- pelicula 08 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_8.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">Badland Hunters</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div> 
-                        </a>
-                    </div>
-
-                    <!-- pelicula 09 -->
-                    <div class="movie-item">
-                        <a href="pages/detalle-movie.html">
-                            <img src="assets/img/peli_9.jpg" alt="" class="movie-item-img">
-                            
-                            <div class="movie-item-detail">
-                                <p class="movie-item-detail-title">The Masked Saint</p>
-                                <p class="movie-item-detail-subtitle"></p>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- películas más aclamadas AQUI IRIA EL CARRUSEL-->
-        <section id="top-rated">
-
-                <div class="container">
-                
-                    <h2>Las más aclamadas.</h2>
-                    <!-- Div para mostrar todas las imagenes e info 
-                        de las películas -->
-                    <div id="list-top-rated" class="movies-scroller">
+        <hr>
+        <section id="tendencias" class="peliculasTendencia">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas">
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
                     
-                        <!-- pelicula 01 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_1.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Lord of the Ring - The Return og the King</p>
-                                <p class="movie-item-detail-subtitle-v2">2003</p>
-                            </div>
+                        <img class="imgTendencia" src="./assets/img/peli_1.jpg" alt="The Beekeeper" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>The Beekeeper</h4>
                         </div>
-
-                        <!-- pelicula 02 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_2.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather</p>
-                                <p class="movie-item-detail-subtitle-v2">1972</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 03 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_3.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">The Godfather II</p>
-                                <p class="movie-item-detail-subtitle-v2">1974</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 04 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_4.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">Schindlers List</p>
-                                <p class="movie-item-detail-subtitle-v2">1993</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 05 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_5.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">Pulp Fiction</p>
-                                <p class="movie-item-detail-subtitle-v2">1994</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 06 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_6.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">Spirited Away</p>
-                                <p class="movie-item-detail-subtitle-v2">2001</p>
-                            </div>
-                        </div>
-
-                        <!-- pelicula 07 -->
-                        <div class="movie-item-v2" >
-                            <div class="wrapper">
-                                <img src="assets/img/aclamada_7.jpg" alt="" class="movie-item-img-v2">
-                            </div>
-                            <div class="movie-item-detail-v2">
-                                <p class="movie-item-detail-title-v2">Forrest Gump</p>
-                                <p class="movie-item-detail-subtitle-v2">1994</p>
-                            </div>
-                        </div>
-
+                    
                     </div>
-
-                </div>
-
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                    
+                        <img class="imgTendencia" src="./assets/img/peli_2.jpg" alt="Badland Hunters" loading="lazy">
+                       
+                        <div class="tituloPelicula">
+                            <h4>Badland Hunters</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_3.jpg" alt="The Marvels" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>The Marvels</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_4.jpg" alt="Wonka" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                                <h4>Wonka</h4>
+                        </div>
+                    </div>
+                   
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_5.jpg" alt="Aquaman and the Lost Kingdom" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>Aquaman and the Lost Kingdom</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_6.jpg" alt="Migration" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>Migration</h4>
+                        </div>
+                        
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_7.jpg" alt="Sixty Minutes" loading="lazy">
+                       
+                        <div class="tituloPelicula">
+                            <h4>Sixty Minutes</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_8.jpg" alt="Wish" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>Wish</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_9.jpg" alt="The Masked Saint" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>The Masked Saint</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_10.jpg" alt="Due Justice" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>Due Justice</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                        
+                        <img class="imgTendencia" src="./assets/img/peli_11.jpg" alt="Orion and the Darke" loading="lazy">
+                        
+                        <div class="tituloPelicula">
+                            <h4>Orion and the Dark</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+                <a href="./pages/detalle.html">
+                    <div class="pelicula">
+                    
+                        <img class="imgTendencia" src="./assets/img/peli_12.jpg" alt="Genghis Khan" loading="lazy">
+                       
+                        <div class="tituloPelicula">
+                            <h4>Genghis Khan</h4>
+                        </div>
+                    
+                    </div>
+                </a>
+            </div>
+            <button class="boton anterior">Anterior</button>  
+            <button class="boton siguiente">Siguiente</button>
         </section>
-    </main>
+        <hr>
+        <section class="peliculasAclamadas">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+             <div class="aclamadas">
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_1.jpg" alt="aclamada_1" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_2.jpg" alt="aclamada_2" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_3.jpg" alt="aclamada_3" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_4.jpg" alt="aclamada_4" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_5.jpg" alt="aclamada_5" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_6.jpg" alt="aclamada_6" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_7.jpg" alt="aclamada_7" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_8.jpg" alt="aclamada_8" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_9.jpg" alt="aclamada_9" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_10.jpg" alt="aclamada_10" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_11.jpg" alt="aclamada_11" loading="lazy">
+                </div>
+                <div class="peliculaItem">
+                    <img class="imgAclamada" src="./assets/img/aclamada_12.jpg" alt="aclamada_12" loading="lazy">
+                </div>               
+            </div>
+        </section>
 
-    <footer id="footer">
-        <nav>
-            <ul class="listaFooter">
-                <li><a href="">Términos y condiciones</a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
-                <li><a href="">Ayuda</a></li>
-                <li><a href="">Administrador Peliculas</a></li>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
             </ul>
-        </nav><a href="#main" class="flechaArriba">
+        </nav>
+        <a href="#main" class="flechaArriba">
             <img src="./assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
         </a>
-
     </footer>
 
 </body>
