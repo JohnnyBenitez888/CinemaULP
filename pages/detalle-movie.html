@@ -15,118 +15,114 @@
 
 <!-- cuerpo -->
 <body>
-      <!-- diseño de encabezado -->
-    <header>
-        <!-- diseño de la barra de navegación -->
-        <nav>
-            <!-- espacio del logo OJO CON EL MENÚ QUITAMOS TENDENCIAS  -->
-            <a href="../index.html"><i class="fa-solid fa-film"></i> Cinema ULP</a> <!-- CORREGIMOS LA DIRE -->
-            <!-- diseño del menú con etiqueta de listas desordenadas -->
-            <ul type="square">
-                <!-- cada item li es un elemento del menú CORREGIMOS-->
-                <li><a href="./register.html" title="Haz click para registrarte">Registrarse</a></li>
-                <!-- trabajamos con enlaces absolutos-->
-                <li>
-                    <a href="https://developer.themoviedb.org/docs" target="_blank"
-                        title="Haz click para ir a la API">API Movie</a>
-                </li>
-                <li><a href="#"></a><span>Iniciar sesion</span></li>
-                <!-- los espacios en blanco se dan con caracteres especiales non-braeking space &NonBreakingSpace; ó &nbsp-->
+    <header class="header">
+        <nav class="navegacion">
+            <a class="anclaLogo" href="../index_fijo.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>Cinema ULP</span>
+            </a>
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="../index_fijo.html#tendencias">Tendencias</a></li>
+                <li class="listaItem"><a class="linkNav" href="./registrarse.html">Registrarse</a></li>
+                <li class="listaItem"><a class="linkNav iniciarSesion" href="./iniciosesion.html">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
-    <!-- seccion principal -->
-    <main>
-        <section id="detail">
-            <div class="detail-container">
-                <!-- sección de imagen de portada -->
-                <div class="detail-img">
-                    <img src="../static/img/peli_2.jpg" alt="mario pelicula 2023">
-                </div>
-                <!-- seccion de detalles -->
-                <div class="detail-info">
-                    <h1>Super Mario Bros. La Película (2023)</h1>
-                    <p>04/05/2023 • Animación, Familiar, Aventura, Fantacia, Comedia • 1h 33m</p>
-                    <h3>Sinopsis</h3>
-                    <p>Mientras trabajan en una avería subterránea, los fontaneros de Brooklyn, 
-                        Mario y su hermano Luigi, viajan por una misteriosa tubería hasta un nuevo mundo mágico. 
-                        Pero, cuando los hermanos se separan, Mario deberá emprender una épica misión para encontrar a Luigi. 
-                        Con la ayuda del champiñón local Toad y unas cuantas nociones de combate de la guerrera líder 
-                        del Reino Champiñón, la princesa Peach, Mario descubre todo el poder que alberga en su interior.</p>
-                    
-                    <!-- TAREA PARA LA CASA 1 hacer details-credits -->
-                    <div class="detail-credits">
-                        <div>
-                            <h4>Aaron Horvath y Michael Jelenic</h4>
-                            <p>Dirección</p>
-                        </div>
-                        <div>
-                            <h4>Matthew Fogel</h4>
-                            <p>Guión</p>
-                        </div>
-                        <div>
-                            <h4>Chris Pratt, Anya Taylor-Joy, Jack Black...</h4>
-                            <p>Voces</p>
-                        </div>
+    <main id="mainDetalle" class="mainDetalle">
+      <section class="detalle" >
+        <div class="contenedorDetalle" >
+            <div class="imgDetalle">
+                <img src="../assets/img/mario.jpg" alt="mario pelicula 2023">
+            </div>
+            <div class="textoDetalle">
+                <h1>Super Mario Bros. La Película (2023)</h1>
+                <p>04/05/2023 • Animación, Familiar, Aventura, Fantacia, Comedia • 1h 33m</p>
+                <h2>Sinopsis</h2>
+                <p>Mientras trabajan en una avería subterránea, los fontaneros de Brooklyn, 
+                    Mario y su hermano Luigi, viajan por una misteriosa tubería hasta un nuevo mundo mágico. 
+                    Pero, cuando los hermanos se separan, Mario deberá emprender una épica misión para encontrar a Luigi. 
+                    Con la ayuda del champiñón local Toad y unas cuantas nociones de combate de la guerrera líder 
+                    del Reino Champiñón, la princesa Peach, Mario descubre todo el poder que alberga en su interior.</p>
+                <div class="contenedorCreditos">
+                    <div>
+                        <h3>Aaron Horvath y Michael Jelenic</h3>
+                        <p>Dirección</p>
                     </div>
-                
-                </div>                
+                    <div>
+                        <h3>Matthew Fogel</h3>
+                        <p>Guión</p>
+                    </div>
+                    <div>
+                        <h3>Chris Pratt, Anya Taylor-Joy, Jack Black...</h3>
+                        <p>Voces</p>
+                    </div>
+                </div>
+               
             </div>
-        </section>
+        </div>
+       
 
-        <!-- seccion trailer de la pelicula -->
-        <section id="trailer">
-            <div class="trailer-container">
-                <h2>Ver trailer</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RjNcTBXTk4I?si=7fnK8NtlxetW0d1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+      </section>
+
+      <section class="trailer"  data-aos="fade-up" data-aos-offset="400" data-aos-delay="50" data-aos-duration="1000"  >
+        <div class="contenedorTrailer">
+            <h2>Ver trailer</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RjNcTBXTk4I?si=7fnK8NtlxetW0d1R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        </div>
+        <div class="contenedorInfo">
+            <div class="redes">
+                <ul>
+                    <li><a href="https://www.facebook.com/supermariomovie" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/supermariomovie" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/supermariomovie/"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                    <li><a href="https://www.thesupermariobros.movie/"><i class="fas fa-link" target="_blank"></i></a></li>
+                </ul>
             </div>
-            <!-- informacion multimedios de la pelicula -->
-            <div class="trailer-info">
-                <!-- redes sociales -->
-                <div class="trailer-socialmedia">
-                    <ul>
-                        <li><a href="https://www.facebook.com/supermariomovie" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://twitter.com/supermariomovie" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="https://instagram.com/supermariomovie/" target="_blank"><i class="fab fa-instagram"  aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.thesupermariobros.movie/" target="_blank"><i class="fas fa-link"  aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-                
-                <!-- TAREA PARA LA CASA 2 REALIZAR OTRAS INFORMACIONES COLOCAR LOS ELEMENTOS EN UNA TABLA -->
-                <!-- otras infos sobre la peli -->
-                <div class="trailer-others-info">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2">Información</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Estado</strong></td>
-                                <td>Estrenado</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Idioma Original</strong></td>
-                                <td>Inglés</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Presupuesto</strong></td>
-                                <td> $100.000.000,00</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Recaudación</strong></td>
-                                <td> $1.347.013.866,00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Información</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Estado</strong></td>
+                            <td>Estrenado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Idioma Original</strong></td>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Presupuesto</strong></td>
+                            <td> $100.000.000,00</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recaudación</strong></td>
+                            <td> $1.347.013.866,00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </section>
+
+        </div>
+
+      </section>
+
     </main>
-
-    <footer>
-        <a href="#">Términos y Condiciones</a>&nbsp;&nbsp;<a href="#">Preguntas frecuentes</a>&nbsp;&nbsp;<a href="#">Ayuda</a>&nbsp;&nbsp;<a href="#">Administrador de películas</a>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="listaNav">
+                <li class="listaItem"><a class="linkNav" href="">Términos y condiciones</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Preguntas frecuentes</a></li>
+                <li class="listaItem"><a class="linkNav" href="">Ayuda</a></li>
+                <li class="listaItem"><a class="linkNav administradorPeliculas" href="">Administrador Peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#main" class="flechaArriba">
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+        </a>
       </footer>&nbsp;
 </body>
 </html>
