@@ -378,7 +378,7 @@ body {
 
         }
 
-        
+
         .boton {
             border: 1px solid white;
             box-sizing: content-box;
@@ -806,56 +806,97 @@ body {
                 }
             }
         }
+    }
 
+    .detalle0 {
+        padding-top: 50px;
+        background: linear-gradient(to right top, #6d6969a7, #6d6969a7), url("../assets/img/furiosa.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 70vh;
+
+        .contenedorDetalle {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 60px;
+
+            img {
+                border-radius: 20px;
+            }
+
+            .textoDetalle {
+                h1 {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                }
+
+                h2 {
+                    margin-top: 20px;
+                }
+
+                .contenedorCreditos {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        
 
 
     }
+}
 
-    .trailer {
-        padding-top: 150px;
-        padding-bottom: 100px;
-        width: 75%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 70px;
 
-        .contenedorInfo {
-            .redes {
-                margin-bottom: 20px;
 
-                ul {
-                    list-style: none;
-                    display: flex;
-                    column-gap: 20px;
+.trailer {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 70px;
 
-                    li {
-                        a {
-                            text-decoration: none;
-                            color: #ffffff;
-                            font-size: 2.5rem;
-                            margin-right: 50px;
-                        }
+    .contenedorInfo {
+        .redes {
+            margin-bottom: 20px;
+
+            ul {
+                list-style: none;
+                display: flex;
+                column-gap: 20px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 2.5rem;
+                        margin-right: 50px;
                     }
-
                 }
+
             }
+        }
 
-            .info {
-                table {
-                    width: 100%;
+        .info {
+            table {
+                width: 100%;
 
-                    tr {
-                        td {
-                            font-size: 1.2rem;
-                            padding: 10px 0px;
-                        }
+                tr {
+                    td {
+                        font-size: 1.2rem;
+                        padding: 10px 0px;
                     }
                 }
             }
         }
     }
+}
 
 }
 
