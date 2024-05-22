@@ -28,26 +28,6 @@
     }
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(23, 23, 23);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #9f3647;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #9f3647;
-}
-
 body {
     background-color: #181419;
     color: white;
@@ -369,8 +349,6 @@ body {
         }
 
         .aclamadas {
-            overflow-x: scroll;
-            overflow-y: hidden;
             width: 100%;
             display: flex;
             justify-content: flex-start;
