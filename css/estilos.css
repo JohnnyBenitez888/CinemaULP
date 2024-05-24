@@ -149,7 +149,7 @@ body {
 .main {
     .sectionPrincipal {
         color: white;
-        background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/4.jpg);
+        background: linear-gradient(to right top, #0000008a, #0000008a), url(../assets/img/sign_bg.png);
         background-size: cover;
         background-position: center;
         height: 90vh;
