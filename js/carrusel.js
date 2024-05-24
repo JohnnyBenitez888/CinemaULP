@@ -1,6 +1,8 @@
 //CARRUSEL
 
 let i = 0;
+
+//ARREGLO DE IMÁGENES
 let imagenes = [
     "assets/img/aclamada_1.jpg",
     "assets/img/aclamada_2.jpg",
@@ -22,6 +24,7 @@ let imagenes = [
     "assets/img/aclamada_17.jpg",
     "assets/img/aclamada_18.jpg",];
 
+//ARREGLO DE OBJETOS CON DATOS DE LAS PELÍCULAS
 let titulos = [
     {
         titulo: "El Padrino",
@@ -157,6 +160,7 @@ let titulos = [
         genero: "Animación, Drama, Bélica"
     },
 ];
+
 
 function cambiarImagen() {
     let img = document.getElementById("img-aclamada");
