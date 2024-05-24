@@ -31,11 +31,9 @@
 body {
     background-color: #181419;
     color: white;
-    /* scrollbar-color: #9f3647  #181419; /*nuevo
-     scrollbar-width: thin;*/
 }
 
-/*ESTILOS HEADER PARA ESCRITORIO*/
+/*ESTILOS HEADER PARA PC ESCRITORIO*/
 .header {
     background-color: #9f3647;
     color: #ffffff;
@@ -50,7 +48,7 @@ body {
         align-items: center;
         margin-left: 40px;
         margin-right: 40px;
-        padding: 1.5rem 0;
+        padding: 1.3rem 0;
 
         .anclaLogo {
             text-decoration: none;
@@ -494,7 +492,7 @@ body {
 
 /*ESTILOS ESCRITORIO FOOTER*/
 .footer {
-    padding: 20px;
+    padding: 50px;
     background-color: #9f3647;
     color: #ffffff;
     height: 18vh;
@@ -524,7 +522,7 @@ body {
                     font-size: 1.2rem;
                 }
 
-                .administradorPeliculas {
+                .contacto {
                     background-color: #181419;
                     color: white;
                     padding: 0.5rem 1rem;
@@ -540,11 +538,6 @@ body {
         right: 20px;
         color: white;
         cursor: pointer;
-    }
-
-    .aportes,
-    .video {
-        font-size: 14px;
     }
 }
 
