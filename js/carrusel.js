@@ -28,49 +28,49 @@ let titulos = [
         director: "Francis Ford Coppola",
         anio: "1972",
         elenco: "Marlon Brando, Al Pacino, James Caan...",
-        genero: ""
+        genero: "Drama, Crímen"
     },
     {
         titulo: "El Señor de los Anillos - El Retorno del Rey",
         director: "Peter Jackson",
         anio: "2003",
         elenco: "Elijah Wood, Ian McKellen, Viggo Mortensen...",
-        genero: ""
+        genero: "Aventura, Acción, Fantasia"
     },
     {
         titulo: "Más Allá del Olvido",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Hugo del Carril",
+        anio: "1956",
+        elenco: "Laura Hidalgo, Hugo del Carril, Gloria Ferrandiz",
+        genero: "Drama, Romance, Thriller"
     },
     {
         titulo: "El viaje de Chihiro",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Hayao Miyazaki",
+        anio: "2001",
+        elenco: "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
+        genero: "Animación, Fantasia, Familiar"
     },
     {
         titulo: "Cinema Paradiso",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Giuseppe Tornatore",
+        anio: "1988",
+        elenco: "Philippe Noiret, Salvatore Cascio, Jacques Perrin",
+        genero: "Drama, Romance"
     },
     {
         titulo: "GoodFellas",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Martin Scorsese",
+        anio: "1990",
+        elenco: "Robert De Niro, Ray Liotta, Joe Pesci",
+        genero: "Drama, Crímen"
     },
     {
         titulo: "Scarface",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Brian De Palma",
+        anio: "1983",
+        elenco: "Al Pacino, Michelle Pfeiffer, Steven Bauer",
+        genero: "Acción, Crímen, Drama"
     },
     {
         titulo: "Rescatando al Soldado Ryan",
@@ -165,7 +165,8 @@ function cambiarImagen() {
     info.innerHTML = `<p><b>TÍTULO: </b>${titulos[i].titulo}</p>
     <p><b>DIRECTOR: </b>${titulos[i].director}</p>
     <p><b>AÑO: </b>${titulos[i].anio}</p>
-    <p><b>ELENCO: </b>${titulos[i].elenco}</p>`;
+    <p><b>ELENCO: </b>${titulos[i].elenco}</p>
+    <p><b>GÉNERO: </b>${titulos[i].genero}</p>`;
 }
 
 
