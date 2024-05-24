@@ -41,120 +41,120 @@ let titulos = [
         titulo: "Más Allá del Olvido",
         director: "Hugo del Carril",
         anio: "1956",
-        elenco: "Laura Hidalgo, Hugo del Carril, Gloria Ferrandiz",
+        elenco: "Laura Hidalgo, Hugo del Carril, Gloria Ferrandiz...",
         genero: "Drama, Romance, Thriller"
     },
     {
         titulo: "El viaje de Chihiro",
         director: "Hayao Miyazaki",
         anio: "2001",
-        elenco: "Rumi Hiiragi, Miyu Irino, Mari Natsuki",
+        elenco: "Rumi Hiiragi, Miyu Irino, Mari Natsuki...",
         genero: "Animación, Fantasia, Familiar"
     },
     {
         titulo: "Cinema Paradiso",
         director: "Giuseppe Tornatore",
         anio: "1988",
-        elenco: "Philippe Noiret, Salvatore Cascio, Jacques Perrin",
+        elenco: "Philippe Noiret, Salvatore Cascio, Jacques Perrin...",
         genero: "Drama, Romance"
     },
     {
         titulo: "GoodFellas",
         director: "Martin Scorsese",
         anio: "1990",
-        elenco: "Robert De Niro, Ray Liotta, Joe Pesci",
+        elenco: "Robert De Niro, Ray Liotta, Joe Pesci...",
         genero: "Drama, Crímen"
     },
     {
         titulo: "Scarface",
         director: "Brian De Palma",
         anio: "1983",
-        elenco: "Al Pacino, Michelle Pfeiffer, Steven Bauer",
+        elenco: "Al Pacino, Michelle Pfeiffer, Steven Bauer...",
         genero: "Acción, Crímen, Drama"
     },
     {
         titulo: "Rescatando al Soldado Ryan",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Steven Spielberg",
+        anio: "1998",
+        elenco: "Tom Hanks, Matt Damon, Tom Sizemore...",
+        genero: "Drama, Bélica, Acción"
     },
     {
         titulo: "El Laberinto del Fauno",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Guillermo del Toro",
+        anio: "2006",
+        elenco: "Ivana Baquero, Maribel Verdú, Doug Jones...",
+        genero: "Fantasia, Drama"
     },
     {
         titulo: "El Secreto de sus Ojos",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Juan José Campanella",
+        anio: "2009",
+        elenco: "Ricardo Darín, Soledad Villamil, Guillermo Francella...",
+        genero: "Misterio, Thriller, Drama"
     },
     {
         titulo: "Parasite",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Bong Joon-ho",
+        anio: "2019",
+        elenco: "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong...",
+        genero: "Comedia, Thriller, Drama"
     },
     {
         titulo: "Mulholland Drive",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "David Lynch",
+        anio: "2001",
+        elenco: "Naomi Watts, Laura Harring, Justin Theroux...",
+        genero: "Thriller, Drama, Misterio"
     },
     {
         titulo: "El Caballero de la Noche",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Christopher Nolan",
+        anio: "2008",
+        elenco: "Christian Bale, Heath Ledger, Gary Oldman...",
+        genero: "Drama, Acción, Crímen, Thriller"
     },
     {
         titulo: "Gladiador",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Ridley Scott",
+        anio: "2000",
+        elenco: "Russell Crowe, Joaquin Phoenix, Connie Nielsen...",
+        genero: "Acción, Drama, Aventura"
     },
     {
         titulo: "El Exorcista",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "William Friedkin",
+        anio: "1973",
+        elenco: "Jason Miller, Ellen Burstyn, Linda Blair...",
+        genero: "Horror, Thriller, Drama"
     },
     {
         titulo: "Alien - El Octavo Pasajero",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Ridley Scott",
+        anio: "1979",
+        elenco: "Sigourney Weaver, Ian Holm, John Hurt...",
+        genero: "Ciencia Ficción, Horror"
     },
     {
         titulo: "Titanic",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "James Cameron",
+        anio: "1997",
+        elenco: "Leonardo DiCaprio, Kate Winslet, Billy Zane...",
+        genero: "Drama, Romance"
     },
     {
         titulo: "Pulp Fiction",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Quentin Tarantino",
+        anio: "1994",
+        elenco: "John Travolta, Samuel L. Jackson, Uma Thurman...",
+        genero: "Thriller, Crímen"
     },
     {
         titulo: "La Tumba de las Luciernagas",
-        director: "Francis Ford Coppola",
-        anio: "1972",
-        elenco: "Marlon Brando, Al Pacino, James Caan",
-        genero: ""
+        director: "Isao Takahata",
+        anio: "1988",
+        elenco: "Tsutomu Tatsumi, Ayano Shiraishi, Yoshiko Shinohara...",
+        genero: "Animación, Drama, Bélica"
     },
 ];
 
