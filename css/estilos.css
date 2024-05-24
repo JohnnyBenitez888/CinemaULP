@@ -107,41 +107,6 @@ body {
 
 }
 
-/*ESTILOS PARA HEADER MOBILE Y TABLET*/
-
-@media (max-width: 768px) {
-    .header {
-        height: initial;
-
-        .navegacion {
-            margin-left: 10px;
-            margin-right: 10px;
-            flex-direction: column;
-            row-gap: 20px;
-
-            .anclaLogo {
-                font-size: 1.2rem;
-                font-weight: 700;
-            }
-
-            .listaNav {
-
-                padding: initial;
-
-                .listaItem {
-                    .linkNav {
-                        font-weight: 400;
-                        margin-right: initial;
-                        font-size: 1rem;
-                        padding: 0.2rem;
-
-                    }
-
-                }
-            }
-        }
-    }
-}
 
 /*ESTILOS PARA MAIN ESCRITORIO*/
 .main {
@@ -390,105 +355,6 @@ body {
 
 }
 
-@media (max-width: 768px) {
-    .main {
-        .sectionPrincipal {
-            height: 60vh;
-
-            .tituloPrincipal {
-                font-size: 2.5rem;
-            }
-
-            .subtituloPrincipal {
-                font-size: 1.5rem;
-            }
-
-            .botonRegistrarse {
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-            }
-        }
-
-        .buscadorPrincipal {
-            height: 30vh;
-
-            .tituloSection {
-                font-size: 1.6rem;
-            }
-
-            .buscadorPeliculas {
-                .inputBuscador {
-                    font-size: 1rem;
-                    height: 40px;
-                    width: 300px;
-                }
-
-                .botonBuscador {
-                    height: 40px;
-                    padding: 0 15px;
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        .peliculasTendencia {
-            width: 95%;
-
-            .tituloSection {
-                font-size: 2rem;
-            }
-
-            .peliculas {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                a {
-                    width: 100%;
-
-                    .pelicula {
-                        width: 100%;
-                        height: 500px;
-
-                        .tituloPelicula {
-                            h4 {
-                                font-size: 1rem;
-                            }
-                        }
-
-                    }
-                }
-
-
-            }
-
-            .boton {
-                padding: 0.8rem 0.8rem;
-                font-size: 0.8rem;
-            }
-        }
-
-        .peliculasAclamadas {
-            .tituloSection {
-                font-size: 2rem;
-            }
-
-            .aclamadas {
-                .peliculaItem {
-                    width: 150px;
-                    min-width: 150px;
-                    font-size: 15px;
-                    margin-left: 20px;
-
-                    .imgAclamada {
-                        width: 90%;
-                        height: 90%;
-                    }
-                }
-            }
-        }
-    }
-}
 
 /*ESTILOS ESCRITORIO FOOTER*/
 .footer {
@@ -540,34 +406,6 @@ body {
         cursor: pointer;
     }
 }
-
-/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
-@media (max-width: 768px) {
-    .footer {
-        height: initial;
-        padding-top: 15px;
-        padding-bottom: 20px;
-
-        .listaNav {
-            flex-direction: column;
-
-            row-gap: 15px;
-
-            .listaItem {
-
-                .linkNav {
-                    font-size: 1rem;
-                }
-
-                .administradorPeliculas {
-                    padding: 0.5rem 0.8rem;
-                }
-            }
-        }
-    }
-}
-
-
 
 
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
@@ -689,64 +527,8 @@ body {
 
 
 
-/*media querys para mobile PAGINA registrarse*/
-@media (max-width: 1200px) {
-    .bodyRegistrarse {
-        .headerRegistrarse {
-            padding: 20px;
 
-            .anclaLogo {
-                font-size: 1rem;
-            }
-        }
-
-        .main {
-            .seccionRegistrarse {
-                width: 95%;
-                padding: 10px 10px;
-
-                .tituloRegistrarse {
-                    font-size: 2rem;
-                }
-
-                form {
-                    width: 100%;
-                    text-align: center;
-
-                    input:not(.check, .boton),
-                    select {
-                        width: 80%;
-                        height: 35px;
-                        font-size: 1rem;
-                    }
-
-                    .terminos {
-                        width: 80%;
-                        margin: 0 auto;
-                        font-size: 0.7rem;
-                    }
-
-                    .boton {
-                        margin-top: 20px;
-                        margin-bottom: 20px;
-                        width: 70%;
-                        padding: 0.8rem 0.8rem;
-                        font-size: 0.8rem;
-                    }
-
-                    .ayuda {
-                        text-align: left;
-                        font-size: 0.8rem;
-                    }
-                }
-
-            }
-        }
-    }
-
-}
-
-/*ESTILOS ESCRITORIO Detalle Mario*/
+/*ESTILOS ESCRITORIO Detalle Mario y Furiosa*/
 .mainDetalle {
 
     .detalle {
@@ -824,8 +606,6 @@ body {
             }
         }
 
-
-
     }
 }
 
@@ -877,11 +657,177 @@ body {
     }
 }
 
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/*ESTILOS MOBILE Y TABLETS DETALLE*/
+/*ESTILOS PARA HEADER MOBILE Y TABLET*/
+
+@media (max-width: 768px) {
+    .header {
+        height: initial;
+
+        .navegacion {
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .anclaLogo {
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+
+            .listaNav {
+
+                padding: initial;
+
+                .listaItem {
+                    .linkNav {
+                        font-weight: 400;
+                        margin-right: initial;
+                        font-size: 1rem;
+                        padding: 0.2rem;
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS PARA MAIN MOBILE Y TABLET*/
+@media (max-width: 768px) {
+    .main {
+        .sectionPrincipal {
+            height: 60vh;
+
+            .tituloPrincipal {
+                font-size: 2.5rem;
+            }
+
+            .subtituloPrincipal {
+                font-size: 1.5rem;
+            }
+
+            .botonRegistrarse {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+
+        .buscadorPrincipal {
+            height: 30vh;
+
+            .tituloSection {
+                font-size: 1.6rem;
+            }
+
+            .buscadorPeliculas {
+                .inputBuscador {
+                    font-size: 1rem;
+                    height: 40px;
+                    width: 300px;
+                }
+
+                .botonBuscador {
+                    height: 40px;
+                    padding: 0 15px;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .peliculasTendencia {
+            width: 95%;
+
+            .tituloSection {
+                font-size: 2rem;
+            }
+
+            .peliculas {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    width: 100%;
+
+                    .pelicula {
+                        width: 100%;
+                        height: 500px;
+
+                        .tituloPelicula {
+                            h4 {
+                                font-size: 1rem;
+                            }
+                        }
+
+                    }
+                }
+
+
+            }
+
+            .boton {
+                padding: 0.8rem 0.8rem;
+                font-size: 0.8rem;
+            }
+        }
+
+        .peliculasAclamadas {
+            .tituloSection {
+                font-size: 2rem;
+            }
+
+            .aclamadas {
+                .peliculaItem {
+                    width: 150px;
+                    min-width: 150px;
+                    font-size: 15px;
+                    margin-left: 20px;
+
+                    .imgAclamada {
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*ESTILOS MOBILE Y TABLETS DETALLE MARIO Y FURIOSA*/
 @media screen and (max-width:1200px) {
     .mainDetalle {
         .detalle {
+            height: initial;
+
+            .contenedorDetalle {
+                flex-direction: column;
+                row-gap: 20px;
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .textoDetalle {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+
+                    .contenedorCreditos {
+                        flex-direction: column;
+                        row-gap: 10px;
+                    }
+                }
+            }
+        }
+        .detalle0 {
             height: initial;
 
             .contenedorDetalle {
@@ -964,6 +910,90 @@ body {
         }
     }
 }
+
+/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
+@media (max-width: 768px) {
+    .footer {
+        height: initial;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+        .listaNav {
+            flex-direction: column;
+
+            row-gap: 15px;
+
+            .listaItem {
+
+                .linkNav {
+                    font-size: 1rem;
+                }
+
+                .administradorPeliculas {
+                    padding: 0.5rem 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+/*media querys para mobile PAGINA registrarse*/
+@media (max-width: 1200px) {
+    .bodyRegistrarse {
+        .headerRegistrarse {
+            padding: 20px;
+
+            .anclaLogo {
+                font-size: 1rem;
+            }
+        }
+
+        .main {
+            .seccionRegistrarse {
+                width: 95%;
+                padding: 10px 10px;
+
+                .tituloRegistrarse {
+                    font-size: 2rem;
+                }
+
+                form {
+                    width: 100%;
+                    text-align: center;
+
+                    input:not(.check, .boton),
+                    select {
+                        width: 80%;
+                        height: 35px;
+                        font-size: 1rem;
+                    }
+
+                    .terminos {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 0.7rem;
+                    }
+
+                    .boton {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+
+                    .ayuda {
+                        text-align: left;
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
 
 hr {
     border: 1px solid #9f3647;
