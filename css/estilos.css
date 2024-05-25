@@ -411,7 +411,7 @@ body {
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse e INICIO SESION*/
 .bodyRegistrarse {
     height: 100vh;
-    background: linear-gradient(to right top, #24242473, #24242473), url("../assets/img/bg-register.jpg");
+    background: linear-gradient(to right top, #24242473, #24242473), url("../assets/img/Register_Exit.jpg");
     background-size: cover;
     background-position: center;
 
@@ -437,7 +437,7 @@ body {
 
         /*seccion de registrarse.html*/
         .seccionRegistrarse {
-            background-color: rgb(42, 42, 42);
+            background-color:  rgba(42, 42, 42, 0.9);
             width: 30%;
             margin: 0 auto;
             border-radius: 5px;
