@@ -24,7 +24,7 @@
     </header>
     <main id="main" class="main">
         <section id="oculto" class="seccionRegistrarse"><!-- Con javascript vamos a ocultar el formulario -->
-            <form action="">
+            <form action="" name="forma" onsubmit="return validateForm()">
                 <h2 class="tituloRegistrarse">Registro</h2>
                 <div>
                     <input type="text" placeholder="Nombre" id="nombre" name="nombre">
@@ -69,7 +69,7 @@
                     <div class="error-text"></div>
                 </div>
                 <div>
-                    <input class="boton" type="submit" value="Registrarse" onclick="ocultar()">
+                    <input class="boton" type="submit" value="Registrarse">
                 </div>
                 <div>
                     <a class="ayuda" href="#">Necesitas ayuda?</a>
