@@ -408,7 +408,7 @@ body {
 }
 
 
-/*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
+/*ESTILOS ESCRITORIO PARA PAGINA Registrarse e INICIO SESION*/
 .bodyRegistrarse {
     height: 100vh;
     background: linear-gradient(to right top, #24242473, #24242473), url("../assets/img/bg-register.jpg");
