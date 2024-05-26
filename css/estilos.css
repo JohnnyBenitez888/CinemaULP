@@ -435,9 +435,11 @@ body {
 
     .main {
         display: flex;
+        flex-direction: row;
+
         /*seccion de registrarse.html*/
         .seccionRegistrarse {
-            background-color:  rgba(42, 42, 42, 0.9);
+            background-color: rgba(42, 42, 42, 0.9);
             width: 30%;
             margin: 0 auto;
             border-radius: 5px;
@@ -460,30 +462,16 @@ body {
                 width: 100%;
                 padding: 40px;
 
-                input:not(.check, .boton),
-                select {
+                .sisi {
                     width: 100%;
                     margin-bottom: 10px;
                     height: 40px;
                     padding: 0px 20px;
                     font-size: 1.2rem;
                     border-radius: 20px;
-                    border: 2px solid #9f3647;
                     background-color: #333333;
                     outline: none;
                     color: rgb(255, 255, 255);
-                }
-
-                .error input:not(.check, .boton),
-                .error select {
-                    border: 1px solid #ff0000;
-                }
-
-                .error-text {
-                    color: #ff0000;
-                    font-size: 0.8rem;
-                    margin-top: 0px;
-                    margin-bottom: 10px;
                 }
 
                 .terminos {
@@ -521,15 +509,16 @@ body {
             }
 
         }
-        #seccionOculta{
-            background-color:  rgba(42, 42, 42, 0.9);
+
+        #seccionOculta {
+            background-color: rgba(42, 42, 42, 0.9);
             width: 50%;
             margin: 0 auto;
-            border-radius: 5px; 
+            border-radius: 5px;
             align-items: center;
             height: 90vh;
             font-size: 1.2rem;
-            display: none;
+            display:inline;
 
             .tituloOculto {
                 font-size: 2.5rem;
@@ -537,13 +526,20 @@ body {
                 margin-bottom: 20px;
                 text-align: center;
             }
-            .listaOculta, li{
-                margin-left: 40px;}
+
+            .listaOculta,
+            li {
+                margin-left: 40px;
+            }
+            
+            
         }
 
     }
 }
-
+.error {
+    border: 2px solid #ff0000;
+}
 
 
 
@@ -846,6 +842,7 @@ body {
                 }
             }
         }
+
         .detalle0 {
             height: initial;
 
