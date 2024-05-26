@@ -526,8 +526,6 @@ body {
             width: 50%;
             margin: 0 auto;
             border-radius: 5px; 
-            display: flex;
-            flex-direction: column;
             align-items: center;
             height: 90vh;
             font-size: 1.2rem;
@@ -536,7 +534,10 @@ body {
                 font-size: 2.5rem;
                 font-weight: 700;
                 margin-bottom: 20px;
+                text-align: center;
             }
+            .listaOculta, li{
+                margin-left: 40px;}
         }
 
     }
