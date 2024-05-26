@@ -6,7 +6,7 @@ function validateForm(){
 
 }
 
-let parrafo = document.createElement("p");
+/* let parrafo = document.createElement("p");
 parrafo.innerHTML = "Hola Mundo";
 
-document.getElementById("").appendChild(parrafo);
+document.getElementById("").appendChild(parrafo); */
