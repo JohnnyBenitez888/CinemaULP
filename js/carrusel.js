@@ -193,7 +193,7 @@ function cambiarImagen() {
     <p><b>PAÍS: </b>${titulos[i].pais}</p>`;
 }
 
-
+//función del botón anterior
 function anterior() {
     if (i > 0) {
         i--;
@@ -203,6 +203,7 @@ function anterior() {
     cambiarImagen();
 }
 
+//función del botón siguiente
 function siguiente() {
     if (i < imagenes.length - 1) {
         i++;
