@@ -1,8 +1,3 @@
-/* function ocultar(){
-    document.getElementById("oculto").style.display = "none";
-} */
-
-
 
 //Expresiones regulares
 const isEmail = (email) => {
@@ -11,8 +6,6 @@ const isEmail = (email) => {
 };
 
 function validateForm() {
-    /* let sesion = document.getElementById("seccionOculta");
-    sesion.style.display = "inline"; */
     //Mis datos
     let ltaErrores = document.getElementById("listaOculta");
     let pSaludo = document.getElementById("saludo");
@@ -32,7 +25,7 @@ function validateForm() {
     let f_fecha = document.getElementById("f_fecha");
     let fecha = f_fecha.value;
     let f_tyc = document.getElementById("f_terminos");
-    let tyc = f_tyc.Checked;//True o false
+    let tyc = f_tyc.checked;//True o false
     let errores = [];
     let campo_error = null;
 
@@ -64,6 +57,11 @@ function validateForm() {
         campo_error = f_password;
         f_password.classList.add("error");
     }
+    if (fecha == "") {
+        errores.push("Falta la Fecha de Nacimiento");
+        campo_error = f_fecha;
+        f_fecha.classList.add("error");
+    }
     if (pais == "") {
         errores.push("Falta el país");
         campo_error = f_pais;
@@ -94,8 +92,3 @@ function validateForm() {
 
     return false;
 }
-
-/* let parrafo = document.createElement("p");
-parrafo.innerHTML = "Hola Mundo";
-
-document.getElementById("").appendChild(parrafo); */

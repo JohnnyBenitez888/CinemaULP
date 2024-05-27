@@ -518,7 +518,8 @@ body {
             align-items: center;
             height: 90vh;
             font-size: 1.2rem;
-            display:inline;
+            display: inline;
+
 
             .tituloOculto {
                 font-size: 2.5rem;
@@ -531,12 +532,21 @@ body {
             li {
                 margin-left: 40px;
             }
-            
-            
+
+            #saludo {
+                margin-left: 40px;
+            }
+
+            #gif {
+                margin-left: 100px;
+            }
+
+
         }
 
     }
 }
+
 .error {
     border: 2px solid #ff0000;
 }
