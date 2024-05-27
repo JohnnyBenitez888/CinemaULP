@@ -6,7 +6,7 @@
 }
 
 /*Animación para que se mueva el Logo CINEMA ULP*/
-@keyframes tilt-n-move-shaking {
+@keyframes mueve-mueve {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
@@ -58,7 +58,7 @@ body {
 
             /*animacion hover*/
             &:hover {
-                animation: tilt-n-move-shaking 0.25s infinite;
+                animation: mueve-mueve 0.25s infinite;
             }
         }
 
@@ -428,7 +428,7 @@ body {
 
             /*animacion hover*/
             &:hover {
-                animation: tilt-n-move-shaking 0.25s infinite;
+                animation: mueve-mueve 0.25s infinite;
             }
         }
     }
