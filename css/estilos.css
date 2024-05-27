@@ -568,7 +568,12 @@ body {
     border: 2px solid #ff0000;
 }
 
-
+hr {
+    border: 1px solid #9f3647;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
 
 /*ESTILOS ESCRITORIO Detalle Mario y Furiosa*/
 .mainDetalle {
@@ -1038,9 +1043,3 @@ body {
 }
 
 
-hr {
-    border: 1px solid #9f3647;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 40px;
-}
