@@ -457,7 +457,7 @@ body {
                 margin-bottom: 20px;
             }
 
-            /*seleccionar todos los input menos el checkbox*/
+            
             form {
                 width: 100%;
                 padding: 40px;
@@ -518,7 +518,6 @@ body {
             align-items: center;
             height: 90vh;
             font-size: 1.2rem;
-            display: inline;
 
 
             .tituloOculto {
@@ -533,15 +532,33 @@ body {
                 margin-left: 40px;
             }
 
-            #saludo {
+            .saludo {
                 margin-left: 40px;
             }
 
-            #gif {
+            .gif {
                 margin-left: 100px;
             }
 
+            .boton {
+                width: 30%;
+                box-sizing: content-box;
+                background-color: #9f3647;
+                border: 2px solid #9f3647;
+                color: #ffffff;
+                padding: 1rem 1rem;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: 500;
+                justify-content: center;
+                align-items: center;
+                margin-left: 250px;
+            }
 
+        }
+
+        .hidden {
+            display: none;
         }
 
     }

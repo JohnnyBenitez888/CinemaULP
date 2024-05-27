@@ -1,17 +1,23 @@
 
 //Expresiones regulares
-const isEmail = (email) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-};
+const nombreApellido =  /^[a-zA-ZÀ-ÿ\s]{1,30}$/;
+const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const pass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;// Al menos 8 caracteres, una letra y un número
+
 
 function validateForm() {
+    //hacer aparecer mi seccion oculta
+    let pantalla = document.getElementById("seccionOculta");
+    pantalla.classList.remove('hidden');
+    
+
     //Mis datos
     let ltaErrores = document.getElementById("listaOculta");
     let pSaludo = document.getElementById("saludo");
-    let btn = document.getElementById("btnRegistro");
+    let tituloh2 = document.getElementById("tituloh2");
+    let btn = document.getElementById("btnOculto");
 
-
+    //datos del form
     let f_nombre = document.getElementById("f_nombre");
     let nombre = f_nombre.value.trim();
     let f_apellido = document.getElementById("f_apellido");
@@ -29,7 +35,7 @@ function validateForm() {
     let errores = [];
     let campo_error = null;
 
-    let forma = document.getElementById("forma");
+    let forma = document.getElementById("seccionRegistrarse");
 
     ltaErrores.innerHTML = "";
 
@@ -37,23 +43,23 @@ function validateForm() {
         e.classList.remove("error");
     }
 
-    if (nombre == "") {
-        errores.push("Falta el nombre");
+    if (!nombreApellido.test(nombre)) {
+        errores.push("El nombre debe tener entre 1 y 30 caracteres y solo puede contener letras y espacios.");
         campo_error = f_nombre;
         f_nombre.classList.add("error");
     }
-    if (apellido == "") {
-        errores.push("Falta el apellido");
+    if (!nombreApellido.test(apellido)) {
+        errores.push("El apellido debe tener entre 1 y 30 caracteres y solo puede contener letras y espacios.");
         campo_error = f_apellido;
         f_apellido.classList.add("error");
     }
-    if (email == "" && (!isEmail(email))) {
+    if (!isEmail.test(email)) {
         errores.push("Email no válido");
         campo_error = f_email;
         f_email.classList.add("error");
     }
-    if (password == "") {
-        errores.push("Falta la contraseña");
+    if (!pass.test(password)) {
+        errores.push("La contraseña debe tener al menos 8 caracteres, incluyendo una letra y un número.");
         campo_error = f_password;
         f_password.classList.add("error");
     }
@@ -87,8 +93,36 @@ function validateForm() {
         return false;
     }
 
-    let mje = `Bienvenido ${nombre} ${apellido} a Cinema ULP`;
+    
+    let titulo = "Bienvenido a Cinema ULP";
+    tituloh2.innerHTML = titulo;
+    let mje = `${nombre} ${apellido} ya sos parte de Cinema ULP, la proxima vez ingresa con tu email y contraseña que proporcionaste.`;
     pSaludo.innerHTML = mje;
 
+    //Creamos un parrafo
+    let p1 = document.createElement("p");
+    p1.innerHTML = `Tu email es: ${email}`;
+    p1.classList.add("saludo");
+    pantalla.appendChild(p1);
+
+    //creamos la imagen
+    let img = document.createElement("img");
+    img.classList.add("gif");
+    img.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExendscnJreXU3b3I4dDUyMmRiOG90eHVlYWRlbTQwNzI1cm52OHRvbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8vpeyWA3OWOhG/giphy.gif";
+    pantalla.appendChild(img);
+
+    //aparece el boton
+    btn.classList.add("boton");
+    btn.innerHTML = "Ir a la página principal";
+    pantalla.appendChild(btn);
+    
+    //ocultar el form pero no funciona
+    /* let pantalla2 = document.getElementById("seccionRegistrarse");
+    pantalla2.style.display = none; */
     return false;
+}
+
+//funcion para el segundo boton que redirecciona a la pagina principal
+function boton() {
+    window.location.href = '../index.html';
 }

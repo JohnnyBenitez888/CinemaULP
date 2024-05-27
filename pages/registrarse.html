@@ -23,7 +23,8 @@
         </a>
     </header>
     <main id="main" class="main">
-        <section class="seccionRegistrarse"><!-- Con javascript vamos a ocultar el formulario -->
+        <section class="seccionRegistrarse" id="seccionRegistrarse">
+            <!-- Con javascript vamos a ocultar el formulario -->
             <form id="forma" onsubmit="return validateForm()">
                 <h2 class="tituloRegistrarse">Registro</h2>
                 <div>
@@ -39,8 +40,8 @@
                     <input type="password" placeholder="Contraseña" id="f_password" name="f_password" class="sisi">
                 </div>
                 <div>
-                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="f_fecha"
-                        name="f_fecha" class="sisi">
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="f_fecha" name="f_fecha"
+                        class="sisi">
                 </div>
                 <div>
                     <select name="pais" id="f_pais" class="sisi">
@@ -70,12 +71,13 @@
             </form>
         </section>
         <!----------------------------------------------------------------------------------------------------------------------->
-        <section id="seccionOculta">
-            <h2 class="tituloOculto">Información</h2>
-            <p id="saludo"></p>
+        <section id="seccionOculta" class="hidden">
+            <h2 class="tituloOculto" id="tituloh2">Validando Datos</h2>
+            <p id="saludo" class="saludo"></p>
             <ul id="listaOculta">
             </ul>
-           
+            <br>
+            <button id="btnOculto" onclick="return boton()"></button>
         </section>
     </main>
     <script src="../js/registrarse.js"></script>
