@@ -167,7 +167,7 @@ let titulos = [
     titulo: "Pulp Fiction",
     director: "Quentin Tarantino",
     anio: "1994",
-    elenco: "John Travolta, Samuel L. Jackson, Uma Thurman...",
+    elenco: "John Travolta, Samuel L. Jackson, Uma Thurman..",
     genero: "Thriller, Crímen",
     pais: "EE.UU",
   },
